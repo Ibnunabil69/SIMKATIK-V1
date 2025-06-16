@@ -22,7 +22,7 @@ const FilterCetakPDF = () => {
   const handleDownloadPdf = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/export-pdf?tipe=${tipe}&tahun=${tahun}`,
+        `http://backend-simkatik.trihech.my.id/api/export-pdf?tipe=${tipe}&tahun=${tahun}`,
         {
           method: "GET",
           headers: {

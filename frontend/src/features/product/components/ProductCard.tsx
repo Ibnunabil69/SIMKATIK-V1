@@ -19,7 +19,7 @@ const ProductCard = ({ product, className, ...props }: ProductCardProps) => {
         >
             <figure className="relative group-hover:opacity-90">
                 <img
-                    src={`http://localhost:8000/storage/${product.gambar_produk}`}
+                    src={`http://backend-simkatik.trihech.my.id/storage/${product.gambar_produk}`}
                     alt={product.nama_produk}
                     width={215}
                     height={215}

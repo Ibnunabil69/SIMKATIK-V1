@@ -25,7 +25,7 @@ const DashboardPage = () => {
     const fetchAnalytics = async () => {
         try {
             const response = await fetch(
-                `http://localhost:8000/api/dashboard/analytics?bulan=${bulan}&tahun=${tahun}`,
+                `http://backend-simkatik.trihech.my.id/api/dashboard/analytics?bulan=${bulan}&tahun=${tahun}`,
                 {
                     headers: {
                         Accept: "application/json",
@@ -51,7 +51,7 @@ const DashboardPage = () => {
     const handlePrintPDF = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:8000/api/dashboard/pdf?bulan=${bulan}&tahun=${tahun}`,
+                `http://backend-simkatik.trihech.my.id/api/dashboard/pdf?bulan=${bulan}&tahun=${tahun}`,
                 {
                     responseType: "blob",
                     headers: {

@@ -106,7 +106,7 @@ const UpdateProductForm = ({ isMobile }: UpdateProductFormProps) => {
                             <ImageUpload
                                 defaultValue={
                                     selectedProduct?.gambar_produk &&
-                                    `http://localhost:8000/storage/${selectedProduct?.gambar_produk}`
+                                    `http://backend-simkatik.trihech.my.id/storage/${selectedProduct?.gambar_produk}`
                                 }
                                 onImageChange={field.onChange}
                             />

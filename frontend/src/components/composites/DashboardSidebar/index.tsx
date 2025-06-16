@@ -28,7 +28,7 @@ const DashboardSidebar = ({
   const handlePrintPDF = async () => {
     try {
       const response = await axios.get(
-  "http://localhost:8000/api/dashboard/pdf",
+  "http://backend-simkatik.trihech.my.id/api/dashboard/pdf",
   {
     responseType: "blob",
     headers: {
